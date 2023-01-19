@@ -23,7 +23,9 @@ scrollTopBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
 
-document.querySelector("body").addEventListener("click", console.log("clicked by window"))
+document
+  .querySelector("body")
+  .addEventListener("click", console.log("clicked by window"));
 
 // ************************ Sliders
 

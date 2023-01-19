@@ -20,7 +20,7 @@ section {
 }
 
 .feature_section .items .item:hover img {
-  @apply scale-100
+  @apply scale-100;
 }
 
 h1,
