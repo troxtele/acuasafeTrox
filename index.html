@@ -1,0 +1,2962 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Spartran -->
+    <link rel="stylesheet" href="./fonts/font.css" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./css/owl.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Alpine JS -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <!-- Fav Icon -->
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/x-icon" />
+    <!-- Title -->
+    <title>Acuasafe</title>
+  </head>
+
+  <body
+    x-data="{nav: false}"
+    :class="nav ? 'overflow-hidden' : 'overflow-visible'"
+    class="text-md text-center text-default-text-col w-full h-full relative"
+  >
+    <!----------------------------------------->
+    <!----- Header Section ----->
+    <!----------------------------------------->
+    <header
+      class="bg-white/80 backdrop-blur-3xl sticky left-0 right-0 top-0 z-30 transition-all duration-700"
+    >
+      <div class="container">
+        <div
+          class="content py-3 lg:py-0 flex justify-between items-center text-slate-800"
+        >
+          <a href="index.html" class="logo">
+            <figure>
+              <img
+                class="w-[11rem] md:w-[13rem]"
+                src="./images/nav/logo.png"
+                alt="logo"
+              />
+            </figure>
+          </a>
+          <nav class="nav_large hidden lg:block h-full">
+            <!-- Nav Large -->
+            <ul class="lg:flex gap-12 font-bold capitalize h-full py-4 md:py-7">
+              <!-- Home -->
+              <li class="h-full parent_li">
+                <a
+                  @click="nav = false"
+                  href="./index.html"
+                  class="hover:text-cyan-400 transition-all duration-300 py-7"
+                  >home</a
+                >
+                <!-- Sub menu -->
+                <ul
+                  class="sub_menu bg-default-small-nav text-white absolute font-semibold transition-all duration-500"
+                >
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="./index.html"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >home page 01</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="./index.html"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >home page 02</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="./index.html"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >home page 03</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="./index.html"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >home page 04</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="./index.html"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4"
+                      >onepage home</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- pages -->
+              <li class="h-full parent_li">
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300 py-7"
+                  >pages</a
+                >
+                <!-- Sub menu -->
+                <ul
+                  class="sub_menu bg-default-small-nav text-white absolute font-semibold transition-all duration-500"
+                >
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >about us</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >our team</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >team details</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >testimonials</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >faq's</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >gallery 1</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4"
+                      >gallery 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Services -->
+              <li class="h-full parent_li">
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300 py-7"
+                  >Services</a
+                >
+                <!-- Sub menu -->
+                <ul
+                  class="sub_menu bg-default-small-nav text-white absolute font-semibold transition-all duration-500"
+                >
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >Our Services</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >Project Planning</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >Residential Waters</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >Commercial Waters</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >Filtration Plants</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >Water Softening</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4"
+                      >Market Research</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- elements -->
+              <li class="h-full parent_li">
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300 py-7"
+                  >elements</a
+                >
+                <!-- Sub menu -->
+                <ul
+                  class="sub_menu bg-default-small-nav text-white absolute font-semibold transition-all duration-500"
+                >
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >feature block 1</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >feature block 2</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >about block 1</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >about block 2</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >services 01</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >services 02</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >team block 01</a
+                    >
+                  </li>
+
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >cta block 01</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >pricing block</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4"
+                      >chooseus block</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Shop -->
+              <li class="h-full parent_li">
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300 py-7"
+                  >Shop</a
+                >
+                <!-- Sub menu -->
+                <ul
+                  class="sub_menu bg-default-small-nav text-white absolute font-semibold transition-all duration-500"
+                >
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >shop</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >cart</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >checkout</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4"
+                      >my account</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Blog -->
+              <li class="h-full parent_li">
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300 py-7"
+                  >blog</a
+                >
+                <!-- Sub menu -->
+                <ul
+                  class="sub_menu bg-default-small-nav text-white absolute font-semibold transition-all duration-500"
+                >
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4 border-b border-slate-600/40"
+                      >blog grid</a
+                    >
+                  </li>
+                  <li class="w-72 flex justify-start">
+                    <a
+                      @click="nav = false"
+                      href="#"
+                      class="w-full flex hover:text-cyan-400 transition-all duration-300 py-3 px-4"
+                      >blog single</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Contact -->
+              <li class="h-full parent_li">
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300 py-7"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- nav Btn -->
+          <div
+            x-on:click="nav = ! nav"
+            class="lg:hidden nav_btn grid gap-2 cursor-pointer"
+          >
+            <div class="w-8 h-[2px] bg-slate-900"></div>
+            <div class="w-8 h-[2px] bg-slate-900"></div>
+            <div class="w-8 h-[2px] bg-slate-900"></div>
+          </div>
+          <!-- Icons -->
+          <div
+            x-data="{open : false}"
+            class="hidden lg:flex icons gap-10 text-xl relative"
+          >
+            <i
+              @click="open = !open"
+              class="cursor-pointer fa-solid fa-magnifying-glass"
+            ></i>
+            <div
+              x-cloak
+              :class="open ? 'opacity-100 visible scale-100':'opacity-0 invisible scale-75' "
+              class="search_input absolute flex justify-center items-center px-4 bg-white backdrop-blur-3xl top-14 right-full w-72 h-20 transition-all duration-500 rounded-md drop-shadow-lg"
+            >
+              <input
+                type="text"
+                class="input w-full h-16 border-none focus:outline-none bg-transparent placeholder:text-sm placeholder:select-none placeholder:text-slate-500 text-sm"
+                placeholder="Search..."
+              />
+              <i
+                @click="open = !open"
+                class="cursor-pointer fa-solid fa-magnifying-glass"
+              ></i>
+            </div>
+            <a href="#" class="flex items-center">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!----------------------------------------->
+    <!----- Small Nav ----->
+    <!----------------------------------------->
+    <nav
+      x-data="{toggleSub: false}"
+      class="nav_small fixed top-0 right-0 bottom-0 w-64 sm:w-80 z-50 transition-all duration-500"
+      x-bind:class="nav ? 'visible ' : 'invisible' "
+      x-cloak
+    >
+      <!-- Cross Button -->
+      <div
+        x-on:click="nav = ! nav"
+        :class="nav ? 'visible opacity-100 rotate-180' : 'invisible opacity-0' "
+        class="cross z-50 fixed top-9 right-4 font-bold text-white text-xl p-2 cursor-pointer transform duration-1000"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <!-- floating -->
+      <div
+        x-bind:class="nav ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0' "
+        class="wrapper absolute top-0 right-0 bottom-0 overflow-auto transform transition-all duration-700 bg-default-small-nav w-64 sm:w-80"
+      >
+        <div class="logo py-10 px-6 flex justify-between items-center">
+          <a href="#">
+            <img
+              class="w-[10rem]"
+              src="./images/footer/footer-logo.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <ul
+          class="text-white uppercase py-2 flex flex-col items-start bg-default-small-nav"
+        >
+          <!-- Home -->
+          <li
+            x-data="{open: false}"
+            class="flex flex-col border-y-[1px] border-stone-600/20 w-full"
+          >
+            <!-- nav expand -->
+            <div class="flex justify-between items-center w-full px-4">
+              <a
+                @click="nav = false"
+                href="./index.html"
+                class="hover:text-cyan-400 transition-all duration-300 w-full flex py-2"
+                >home</a
+              >
+              <!-- angle -->
+              <div
+                @click="open = !open"
+                class="angle rounded-sm cursor-pointer"
+              >
+                <i
+                  :class="open ? 'rotate-90' : 'rotate-0' "
+                  class="fa-solid fa-angle-down transition-all duration-300 bg-[#1f314e] flex items-center justify-center h-7 w-7"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Sub menu -->
+            <ul
+              :class="open ? 'max-h-[500px]' : 'max-h-0' "
+              class="overflow-hidden transform transition-all duration-1000 bg-[#1f314e]/50"
+            >
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >home page 01</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >home page 02</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >about</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li x-data="{open: false}" class="flex flex-col w-full">
+            <!-- nav expand -->
+            <div class="flex justify-between items-center w-full px-4 py-2">
+              <a
+                @click="nav = false"
+                href="./index.html"
+                class="hover:text-cyan-400 transition-all duration-300 w-full flex"
+                >pages</a
+              >
+              <!-- angle -->
+              <div
+                @click="open = !open"
+                class="angle min-h-6 min-w-6 rounded-sm cursor-pointer"
+              >
+                <i
+                  :class="open ? 'rotate-90' : 'rotate-0' "
+                  class="fa-solid fa-angle-down transition-all duration-300 bg-[#1f314e] flex items-center justify-center h-7 w-7"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Sub menu -->
+            <ul
+              :class="open ? 'max-h-[500px]' : 'max-h-0' "
+              class="overflow-hidden transform transition-all duration-1000 bg-[#1f314e]/50"
+            >
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >about us</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >our team</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >testimonials</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >faq's</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >gallery one</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >gallery two</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- services -->
+          <li
+            x-data="{open: false}"
+            class="flex flex-col border-y-[1px] border-stone-600/20 w-full"
+          >
+            <!-- nav expand -->
+            <div class="flex justify-between items-center w-full px-4 py-2">
+              <a
+                @click="nav = false"
+                href="./index.html"
+                class="hover:text-cyan-400 transition-all duration-300 w-full flex"
+                >services</a
+              >
+              <!-- angle -->
+              <div
+                @click="open = !open"
+                class="angle min-h-6 min-w-6 rounded-sm cursor-pointer"
+              >
+                <i
+                  :class="open ? 'rotate-90' : 'rotate-0' "
+                  class="fa-solid fa-angle-down transition-all duration-300 bg-[#1f314e] flex items-center justify-center h-7 w-7"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Sub menu -->
+            <ul
+              :class="open ? 'max-h-[500px]' : 'max-h-0' "
+              class="overflow-hidden transform transition-all duration-1000 bg-[#1f314e]/50"
+            >
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >our services</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >residential water</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >commercial water</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >filtration plants</a
+                >
+              </li>
+
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >water softening</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >Market Research</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- elements -->
+          <li x-data="{open: false}" class="flex flex-col w-full">
+            <!-- nav expand -->
+            <div class="flex justify-between items-center w-full px-4 py-2">
+              <a
+                @click="nav = false"
+                href="./index.html"
+                class="hover:text-cyan-400 transition-all duration-300 w-full flex"
+                >elements</a
+              >
+              <!-- angle -->
+              <div
+                @click="open = !open"
+                class="angle min-h-6 min-w-6 rounded-sm cursor-pointer"
+              >
+                <i
+                  :class="open ? 'rotate-90' : 'rotate-0' "
+                  class="fa-solid fa-angle-down transition-all duration-300 bg-[#1f314e] flex items-center justify-center h-7 w-7"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Sub menu -->
+            <ul
+              :class="open ? 'max-h-[500px]' : 'max-h-0' "
+              class="overflow-hidden transform transition-all duration-1000 bg-[#1f314e]/50"
+            >
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >feature block 01</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >feature block 02</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >about block 01</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >services 01</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >news block 01</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >team block 01</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >cta block 01</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >pricing block</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >chooseus block</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- shop -->
+          <li
+            x-data="{open: false}"
+            class="flex flex-col border-y-[1px] border-stone-600/20 w-full"
+          >
+            <!-- nav expand -->
+            <div class="flex justify-between items-center w-full px-4 py-2">
+              <a
+                @click="nav = false"
+                href="./index.html"
+                class="hover:text-cyan-400 transition-all duration-300 w-full flex"
+                >shop</a
+              >
+              <!-- angle -->
+              <div
+                @click="open = !open"
+                class="angle min-h-6 min-w-6 rounded-sm cursor-pointer"
+              >
+                <i
+                  :class="open ? 'rotate-90' : 'rotate-0' "
+                  class="fa-solid fa-angle-down transition-all duration-300 bg-[#1f314e] flex items-center justify-center h-7 w-7"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Sub menu -->
+            <ul
+              :class="open ? 'max-h-[500px]' : 'max-h-0' "
+              class="overflow-hidden transform transition-all duration-1000 bg-[#1f314e]/50"
+            >
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >shop</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >cart</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >checkout</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >my account</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- blog -->
+          <li
+            x-data="{open: false}"
+            class="flex flex-col border-b-[1px] border-stone-600/20 w-full"
+          >
+            <!-- nav expand -->
+            <div class="flex justify-between items-center w-full px-4 py-2">
+              <a
+                @click="nav = false"
+                href="./index.html"
+                class="hover:text-cyan-400 transition-all duration-300 w-full flex"
+                >blog</a
+              >
+              <!-- angle -->
+              <div
+                @click="open = !open"
+                class="angle min-h-6 min-w-6 rounded-sm cursor-pointer"
+              >
+                <i
+                  :class="open ? 'rotate-90' : 'rotate-0' "
+                  class="fa-solid fa-angle-down transition-all duration-300 bg-[#1f314e] flex items-center justify-center h-7 w-7"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Sub menu -->
+            <ul
+              :class="open ? 'max-h-[500px]' : 'max-h-0' "
+              class="overflow-hidden transform transition-all duration-1000 bg-[#1f314e]/50"
+            >
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >blog grid</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="#"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >blog standard</a
+                >
+              </li>
+              <li
+                class="flex border-t-[1px] border-stone-600/20 py-2 w-full pl-10 capitalize"
+              >
+                <a
+                  @click="nav = false"
+                  href="./about.html"
+                  class="hover:text-cyan-400 transition-all duration-300"
+                  >blog single</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- contact -->
+          <li
+            class="flex border-b-[1px] border-stone-600/20 py-2 w-full pl-4 capitalize"
+          >
+            <a
+              @click="nav = false"
+              href="./about.html"
+              class="hover:text-cyan-400 transition-all duration-300"
+              >contact</a
+            >
+          </li>
+
+          <li>
+            <div
+              class="address bg-default-small-nav mt-10 ml-4 grid gap-4 text-start"
+            >
+              <h3 class="capitalize text-xl">Our Address</h3>
+              <ul class="text-sm normal-case gap gap-1">
+                <li>House 35 R/A,Street</li>
+
+                <li><a href="tel:#">+357 984538</a></li>
+
+                <li><a href="#">e-mail us</a></li>
+              </ul>
+              <ul class="flex gap-4 text-md">
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all text-white hover:text-default-blue"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all text-white hover:text-default-blue"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all text-white hover:text-default-blue"
+                    ><i class="fa-brands fa-pinterest"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all text-white hover:text-default-blue"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all text-white hover:text-default-blue"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!----------------------------------------->
+    <!----- Main Section ----->
+    <!----------------------------------------->
+    <main
+      class="hero bg-default-dark-blue h-[660px] sm:h-[700px] md:h-[880px] relative"
+    >
+      <!-- Background Images -->
+      <div class="bg_img">
+        <!-- Top bg -->
+        <div
+          class="top_bg bg-shape-1 bg-[bottom_center] absolute left-0 top-0 w-full h-[160px] bg-no-repeat bg-cover z-20"
+        ></div>
+        <!-- Bottom bg -->
+        <div
+          class="bottom_bg bg-banner-shape w-full absolute left-0 bottom-0 h-[68px] bg-no-repeat bg-center sm:bg-[length:100%_100%]"
+        ></div>
+      </div>
+
+      <!-- *** Main Content *** -->
+      <div
+        class="hero_slider owl-theme owl-carousel owl-nav-none owl-dots-none h-full w-full overflow-hidden relative"
+      >
+        <!-- Slide 1 -->
+        <div
+          class="item h-full w-full relative grid justify-center items-center"
+        >
+          <div class="inner_bg">
+            <!-- Shadow bg -->
+            <div
+              class="shadow_bg bg-shape-2 absolute left-0 bottom-0 w-full h-[363px] bg-no-repeat bg-[top_center] bg-cover"
+            ></div>
+            <!--  BLOBS  -->
+            <div
+              class="animated_blob absolute right-1/3 sm:right-40 lg:right-80 top-10 lg:top-32 bg-slate-400/10 w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] rounded-full"
+            ></div>
+            <!-- Large Blob -->
+            <div
+              class="blob_large absolute -left-4 -top-52 bg-slate-400/10 w-[35rem] h-[35rem] rounded-full"
+            ></div>
+          </div>
+
+          <div
+            class="container text-white text-start lg:grid lg:grid-cols-2 gap-6 relative"
+          >
+            <!-- Container bottle -->
+            <div
+              class="large_bottle absolute h-[446px] w-[987px] right-2 bottom-[48px] hidden lg:flex"
+            >
+              <!-- water drop -->
+              <div class="water_drop">
+                <img
+                  class="absolute h-full w-full bottom-[-152px] right-[-177px]"
+                  src="./images/main/vector-2.png"
+                  alt="water-drop"
+                />
+              </div>
+              <div class="bottle_img flex justify-center">
+                <img
+                  class="w-[280px] h-[528px] absolute bottom-[-72px] right-[133px]"
+                  src="./images/main/vector-1.png"
+                  alt="bottle"
+                />
+              </div>
+            </div>
+            <!-- Contents -->
+            <div
+              class="left_content xs:-translate-y-16 -translate-y-20 lg:-translate-y-32 flex flex-col justify-center gap-5 md:gap-10"
+            >
+              <div class="header flex justify-center">
+                <h1
+                  class="leading-tight text-3xl xs:leading-tight xs:text-4xl md:leading-tight md:text-5xl"
+                >
+                  Always Want Safe and Good Water for Healthy Life
+                </h1>
+              </div>
+              <div class="text max-w-[25rem] md:max-w-[30rem] text-xl">
+                <p>
+                  Water is the most valuable source for living species that is
+                  the most hardest thing to find.
+                </p>
+              </div>
+              <!-- Buttons -->
+              <div class="buttons flex flex-wrap gap-6">
+                <!-- blue button -->
+                <a
+                  class="btn relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-white sm:py-3 sm:px-10 before:transform-all before:duration-700 text-lg sm:text-xl overflow-hidden text-white hover:text-default-blue rounded-full py-2 md:py-4 px-5 md:px-8 font-bold capitalize bg-default-blue transition-all duration-500 before:overflow-hidden"
+                  href="#"
+                >
+                  <span class="relative z-20">our services</span>
+                </a>
+                <!-- White btn -->
+                <a
+                  class="btn relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-white sm:py-3 sm:px-10 before:transform-all before:duration-700 text-lg sm:text-xl overflow-hidden text-white hover:text-default-blue rounded-full py-2 md:py-4 px-5 md:px-8 font-bold capitalize border border-stone-400/40 transition-all duration-500 before:overflow-hidden"
+                  href="#"
+                >
+                  <span class="relative z-20">about more</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div
+          class="item h-full w-full relative grid justify-center items-center"
+        >
+          <div class="inner_bg">
+            <!-- Shadow bg -->
+            <div
+              class="shadow_bg bg-shape-2 absolute left-0 bottom-0 w-full h-[363px] bg-no-repeat bg-[top_center] bg-cover"
+            ></div>
+            <!--  BLOBS  -->
+            <div
+              class="animated_blob absolute right-1/3 sm:right-40 lg:right-80 top-10 lg:top-32 bg-slate-400/10 w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] rounded-full"
+            ></div>
+            <!-- Large Blob -->
+            <div
+              class="blob_large absolute -left-4 -top-52 bg-slate-400/10 w-[35rem] h-[35rem] rounded-full"
+            ></div>
+          </div>
+
+          <div
+            class="container text-white text-start lg:grid lg:grid-cols-2 gap-6 relative"
+          >
+            <!-- Container bottle -->
+            <div
+              class="large_bottle absolute h-[446px] w-[987px] right-2 bottom-[48px] hidden lg:flex"
+            >
+              <!-- water drop -->
+              <div class="water_drop">
+                <img
+                  class="absolute h-full w-full bottom-[-152px] right-[-177px]"
+                  src="./images/main/vector-2.png"
+                  alt="water-drop"
+                />
+              </div>
+              <div class="bottle_img flex justify-center">
+                <img
+                  class="w-[280px] h-[528px] absolute bottom-[-72px] right-[133px]"
+                  src="./images/main/vector-1.png"
+                  alt="bottle"
+                />
+              </div>
+            </div>
+            <!-- Contents -->
+            <div
+              class="left_content -translate-y-20 lg:-translate-y-32 flex flex-col justify-center gap-5 md:gap-10"
+            >
+              <div class="header flex justify-center">
+                <h1
+                  class="leading-tight text-3xl xs:leading-tight xs:text-4xl md:leading-tight md:text-5xl"
+                >
+                  Pure Drinking water for healthy life ensured
+                </h1>
+              </div>
+              <div class="text max-w-[25rem] md:max-w-[30rem] text-xl">
+                <p>
+                  We know you are searching for the purest and healthiest source
+                  for your daily water needs.
+                </p>
+              </div>
+              <!-- Buttons -->
+              <div class="buttons flex flex-wrap gap-6">
+                <!-- blue button -->
+                <a
+                  class="btn relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-white sm:py-3 sm:px-10 before:transform-all before:duration-700 text-lg sm:text-xl overflow-hidden text-white hover:text-default-blue rounded-full py-2 md:py-4 px-5 md:px-8 font-bold capitalize bg-default-blue transition-all duration-500 before:overflow-hidden"
+                  href="#"
+                >
+                  <span class="relative z-20">our services</span>
+                </a>
+                <!-- White btn -->
+                <a
+                  class="btn relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-white sm:py-3 sm:px-10 before:transform-all before:duration-700 text-lg sm:text-xl overflow-hidden text-white hover:text-default-blue rounded-full py-2 md:py-4 px-5 md:px-8 font-bold capitalize border border-stone-400/40 transition-all duration-500 before:overflow-hidden"
+                  href="#"
+                >
+                  <span class="relative z-20">about more</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div
+          class="item h-full w-full relative grid justify-center items-center"
+        >
+          <div class="inner_bg">
+            <!-- Shadow bg -->
+            <div
+              class="shadow_bg bg-shape-2 absolute left-0 bottom-0 w-full h-[363px] bg-no-repeat bg-[top_center] bg-cover"
+            ></div>
+            <!--  BLOBS  -->
+            <div
+              class="animated_blob absolute right-1/3 sm:right-40 lg:right-80 top-10 lg:top-32 bg-slate-400/10 w-[16rem] h-[16rem] md:w-[20rem] md:h-[20rem] rounded-full"
+            ></div>
+            <!-- Large Blob -->
+            <div
+              class="blob_large absolute -left-4 -top-52 bg-slate-400/10 w-[35rem] h-[35rem] rounded-full"
+            ></div>
+          </div>
+
+          <div
+            class="container text-white text-start lg:grid lg:grid-cols-2 gap-6 relative"
+          >
+            <!-- Container bottle -->
+            <div
+              class="large_bottle absolute h-[446px] w-[987px] right-2 bottom-[48px] hidden lg:flex"
+            >
+              <!-- water drop -->
+              <div class="water_drop">
+                <img
+                  class="absolute h-full w-full bottom-[-152px] right-[-177px]"
+                  src="./images/main/vector-2.png"
+                  alt="water-drop"
+                />
+              </div>
+              <div class="bottle_img flex justify-center">
+                <img
+                  class="w-[280px] h-[528px] absolute bottom-[-72px] right-[133px]"
+                  src="./images/main/vector-1.png"
+                  alt="bottle"
+                />
+              </div>
+            </div>
+            <!-- Contents -->
+            <div
+              class="left_content -translate-y-20 lg:-translate-y-32 flex flex-col justify-center gap-5 md:gap-10"
+            >
+              <div class="header flex justify-center">
+                <h1
+                  class="leading-tight text-3xl xs:leading-tight xs:text-4xl md:leading-tight md:text-5xl"
+                >
+                  Pure Drinking water for healthy life ensured
+                </h1>
+              </div>
+              <div class="text max-w-[25rem] md:max-w-[30rem] text-xl">
+                <p>
+                  We know you are searching for the purest and healthiest source
+                  for your daily water needs.
+                </p>
+              </div>
+              <!-- Buttons -->
+              <div class="buttons flex flex-wrap gap-6">
+                <!-- blue button -->
+                <a
+                  class="btn relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-white sm:py-3 sm:px-10 before:transform-all before:duration-700 text-lg sm:text-xl overflow-hidden text-white hover:text-default-blue rounded-full py-2 md:py-4 px-5 md:px-8 font-bold capitalize bg-default-blue transition-all duration-500 before:overflow-hidden"
+                  href="#"
+                >
+                  <span class="relative z-20">our services</span>
+                </a>
+                <!-- White btn -->
+                <a
+                  class="btn relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-white sm:py-3 sm:px-10 before:transform-all before:duration-700 text-lg sm:text-xl overflow-hidden text-white hover:text-default-blue rounded-full py-2 md:py-4 px-5 md:px-8 font-bold capitalize border border-stone-400/40 transition-all duration-500 before:overflow-hidden"
+                  href="#"
+                >
+                  <span class="relative z-20">about more</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!----------------------------------------->
+    <!----- Feature Section ----->
+    <!----------------------------------------->
+    <section
+      class="feature_section -translate-y-16 sm:-translate-y-24 z-20 relative"
+    >
+      <div class="container">
+        <div
+          class="content animated wow fadeInLeft grid justify-center py-24 px-8 sm:px-12 items-center gap-14 bg-white drop-shadow-lg"
+        >
+          <div class="header flex justify-center">
+            <h2 class="">A Trusted Name In Bottled Water Industry</h2>
+          </div>
+          <div
+            class="items grid sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center items-center"
+          >
+            <!-- Item 1 -->
+            <div
+              class="item flex flex-col justify-center items-center gap-7 relative"
+            >
+              <div class="img">
+                <img
+                  class="max-w-[4rem] scale-95 transition-all duration-300"
+                  src="./images/icons/water-drop.png"
+                  alt="water-drop"
+                />
+              </div>
+              <div
+                class="texts flex flex-col gap-2 justify-center items-center"
+              >
+                <h4 class="text-[1.3rem] font-medium">Maxium Purity</h4>
+                <span
+                  class="text-default-light-stone text-[0.95rem] max-w-[16rem]"
+                  >Our Processing plant ensures the best Purity.</span
+                >
+                <!-- Divider -->
+                <div
+                  class="hidden sm:inline-block divider absolute -right-[30px] top-1/2 transform -translate-y-1/2"
+                >
+                  <img src="./images/shape/shape-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="item flex flex-col justify-center items-center gap-7 relative"
+            >
+              <div class="img">
+                <img
+                  class="max-w-[4rem] scale-95 transition-all duration-300"
+                  src="./images/icons/save-water.png"
+                  alt="water-drop"
+                />
+              </div>
+              <div
+                class="texts flex flex-col gap-2 justify-center items-center"
+              >
+                <h4 class="text-[1.3rem] font-medium">Cholorine Free</h4>
+                <span
+                  class="text-default-light-stone text-[0.95rem] max-w-[16rem]"
+                  >Get the Chlorine and heavy metal free water.</span
+                >
+                <!-- Divider -->
+                <div
+                  class="hidden lg:inline-block divider absolute -right-[30px] top-1/2 transform -translate-y-1/2"
+                >
+                  <img src="./images/shape/shape-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="item flex flex-col justify-center items-center gap-7 relative"
+            >
+              <div class="img">
+                <img
+                  class="max-w-[4rem] scale-95 transition-all duration-300"
+                  src="./images/icons/recycle-water.png"
+                  alt="water-drop"
+                />
+              </div>
+              <div
+                class="texts flex flex-col gap-2 justify-center items-center"
+              >
+                <h4 class="text-[1.3rem] font-medium">5 Steps Filtration</h4>
+                <span
+                  class="text-default-light-stone text-[0.95rem] max-w-[16rem]"
+                  >Multiple step filtering ensures the best quality water.</span
+                >
+                <!-- Divider -->
+                <div
+                  class="hidden sm:inline-block divider absolute -right-[30px] top-1/2 transform -translate-y-1/2"
+                >
+                  <img src="./images/shape/shape-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div
+              class="item flex flex-col justify-center items-center gap-7 relative"
+            >
+              <div class="img">
+                <img
+                  class="max-w-[4rem] scale-95 transition-all duration-300"
+                  src="./images/icons/water-glass.png"
+                  alt="water-drop"
+                />
+              </div>
+              <div
+                class="texts flex flex-col gap-2 justify-center items-center"
+              >
+                <h4 class="text-[1.3rem] font-medium">Healthy Water</h4>
+                <span
+                  class="text-default-light-stone text-[0.95rem] max-w-[16rem]"
+                  >We maintain balanced PH level for healthiest water.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- About Section ----->
+    <!----------------------------------------->
+    <section class="about py-16 md:py-20">
+      <div class="container">
+        <div class="content grid md:grid-cols-2 justify-between gap-16">
+          <div
+            class="image -ml-10 sm:-ml-20 flex items-center justify-center wow fadeInLeft animated"
+          >
+            <img
+              class="max-w-[42rem] w-full"
+              src="./images/about/about-1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="text flex flex-col justify-center items-center gap-6 text-center wow fadeInRight animated"
+          >
+            <h2 class="font-bold text-default-text-col">
+              We Always Want Safe and Healthy Water for Healthy Life.
+            </h2>
+            <div class="pera grid gap-6 md:gap-8 text-default-light-stone">
+              <p>
+                We know that as water is the most essential element for all
+                living beings, not only humans, and you have to take it
+                regularly, you are searching for the best quality water
+                consisting of natural PH balance and teste. Without these
+                criteria, your health may be in danger sooner or later.
+              </p>
+              <p>
+                We the Acuasafe team ensure you the purest and healthiest water
+                for daily life with the affordable price. Our QC team regularly
+                monitors and checkup the water quality ensuring you get the best
+                quality.
+              </p>
+            </div>
+            <!-- Btn -->
+            <button
+              class="max-w-[16rem] mt-6 btn relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-default-dark-blue bg-cyan-400 rounded-full py-4 px-10 before:transform-all before:duration-700 text-xl overflow-hidden"
+            >
+              <a
+                href="#"
+                class="capitalize relative text-white font-semibold z-20"
+              >
+                about more
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- Water Section ----->
+    <!----------------------------------------->
+    <section class="water relative py-16 bg-[#f2f9ff]">
+      <!-- Shapes -->
+      <div class="shapes z-0">
+        <div
+          class="hidden md:block shape absolute bg-shape-4 left-0 top-0 w-full h-[200px] bg-no-repeat bg-cover md:bg-[length:100%_100%] bg-center"
+        ></div>
+        <!-- Cirlce Shape -->
+        <div class="circle-shape">
+          <div
+            class="bg-shap absolute left-1/2 transform -translate-x-1/2 -bottom-[250px] w-[900px] h-[900px] rounded-full bg-[#ffffff80]"
+          ></div>
+          <div
+            class="bg-shap absolute left-1/2 transform -translate-x-1/2 -bottom-[150px] w-[700px] h-[700px] rounded-full bg-[#ffffff99] z-[1]"
+          ></div>
+          <div
+            class="bg-shap absolute left-1/2 transform -translate-x-1/2 -bottom-[50px] w-[500px] h-[500px] rounded-full bg-[#ffffff] z-[2]"
+          ></div>
+        </div>
+      </div>
+      <!-- Bottle man -->
+      <div
+        class="hidden lg:block bottle-man absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
+      >
+        <img src="./images/water/bottle-man.png" alt="" />
+      </div>
+      <div class="container relative z-20">
+        <div class="content grid gap-16 md:py-20">
+          <div class="header flex justify-center text-center md:pt-14">
+            <h2>
+              Protect Your Family with Best Water Filtering System Services
+            </h2>
+          </div>
+          <div class="wrapper grid gap-10">
+            <!-- First Items -->
+            <div
+              class="items flex flex-col sm:flex-row items-center lg:px-20 justify-center gap-10 lg:justify-between"
+            >
+              <!-- item 1 -->
+              <div class="animation_wrapper wow fadeInLeft animated">
+                <div
+                  class="item p-6 h-[18rem] max-w-[20rem] custom_shadow flex flex-col justify-center gap-4 bg-[#fff] drop-shadow-sm"
+                >
+                  <div class="img flex justify-center lg:justify-end">
+                    <!-- svg -->
+                    <img
+                      class="max-w-[4rem]"
+                      src="./images/water/residential.svg"
+                      alt="residential"
+                    />
+                  </div>
+                  <div class="text gap-4 flex flex-col lg:text-end">
+                    <a
+                      href="#"
+                      class="hover:text-default-blue transition-all duration-300 text text-2xl font-semibold"
+                    >
+                      Residential Waters
+                    </a>
+                    <span class="text-stone-500 tex-lg"
+                      >We deliver residential users water on multiple
+                      plan.</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 2 -->
+              <div class="animation_wrapper wow fadeInRight animated">
+                <div
+                  class="item p-6 h-[18rem] max-w-[20rem] custom_shadow flex flex-col justify-center gap-4 bg-[#fff] drop-shadow-sm"
+                >
+                  <!-- svg -->
+                  <div class="img flex justify-center lg:justify-start">
+                    <img
+                      class="max-w-[4rem]"
+                      src="./images/water/commercial.svg"
+                      alt="residential"
+                    />
+                  </div>
+                  <div class="text gap-4 flex flex-col lg:text-start">
+                    <a
+                      href="#"
+                      class="hover:text-default-blue transition-all duration-300 text text-2xl font-semibold"
+                    >
+                      Commercial Waters
+                    </a>
+                    <span class="text-stone-500 tex-lg"
+                      >Our plants are ready for Water deliveries commercially.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Second Items -->
+            <div
+              class="items flex flex-col sm:flex-row justify-center items-center gap-10 lg:justify-between lg:mt-20"
+            >
+              <!-- item 1 -->
+              <div class="animation_wrapper wow fadeInLeft animated">
+                <div
+                  class="item p-6 h-[18rem] max-w-[20rem] custom_shadow flex flex-col justify-center gap-4 bg-[#fff] drop-shadow-sm"
+                >
+                  <!-- svg -->
+                  <div class="img flex justify-center lg:justify-end">
+                    <img
+                      class="max-w-[4rem]"
+                      src="./images/water/purification.svg"
+                      alt="residential"
+                    />
+                  </div>
+                  <div class="text gap-4 flex flex-col lg:text-end">
+                    <a
+                      href="#"
+                      class="hover:text-default-blue transition-all duration-300 text text-2xl font-semibold"
+                    >
+                      Filtration Plants
+                    </a>
+                    <span class="text-stone-500 tex-lg"
+                      >Reverse Osmosis filtering system ensures the best
+                      filtration.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="animation_wrapper wow fadeInRight animated">
+                <div
+                  class="item p-6 h-[18rem] max-w-[20rem] custom_shadow flex flex-col justify-center gap-4 bg-[#fff] drop-shadow-sm"
+                >
+                  <!-- svg -->
+                  <div class="img flex justify-center lg:jutify-start">
+                    <img
+                      class="max-w-[4rem]"
+                      src="./images/water/softening.svg"
+                      alt="residential"
+                    />
+                  </div>
+                  <div class="text gap-4 flex flex-col lg:text-start">
+                    <a
+                      href="#"
+                      class="hover:text-default-blue transition-all duration-300 text text-2xl font-semibold"
+                    >
+                      Waters Softening
+                    </a>
+                    <span class="text-stone-500 tex-lg"
+                      >PH balanced and Softened water ensures the healthy life.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- Protect Section ----->
+    <!----------------------------------------->
+    <section class="protect relative text-white pb-10 md:pb-36 overflow-hidden">
+      <!-- backgrounds -->
+      <div class="all_bg">
+        <!-- Protect bg -->
+        <div class="absolute top-0 left-0 protect_left_bg">
+          <img src="./images/protect/shape-6.png" alt="shape-6" />
+        </div>
+        <!-- BLOBS -->
+        <div
+          class="animated_blob absolute right-[25%] transform -translate-x-[25%] -top-10 bg-slate-400/10 w-[20rem] h-[20rem] rounded-full"
+        ></div>
+        <!-- Large Blob -->
+        <div
+          class="hidden sm:block blob_large absolute -right-16 -top-20 bg-slate-400/10 w-[35rem] h-[35rem] rounded-full"
+        ></div>
+      </div>
+      <!-- ************************** -->
+      <div class="bg-center bg-cover bg-no-repeat py-20 bg-protect-bg">
+        <div class="container grid justify-center items-center lg:grid-cols-5">
+          <!-- Main Content -->
+          <div
+            class="content flex flex-col gap-10 text-start w-full lg:col-span-2"
+          >
+            <div class="header">
+              <h3
+                class="font-bold text-[1.7rem] xs:text-3xl md:text-4xl max-w-[45rem] lg:-mr-32"
+              >
+                Don't hesitate to Protect Your Family with the Healthiest and
+                Purest water .
+              </h3>
+            </div>
+            <div class="texts flex flex-col gap-8">
+              <!-- Residential -->
+              <div
+                class="residential sm:max-w-[30rem] md:max-w-[40.5rem] relative flex items-center gap-8 justify-center"
+              >
+                <div
+                  class="tick text-xl text-slate-200 sm:text-2xl flex justify-center items-center min-h-[3rem] min-w-[3rem] bg-default-blue rounded-full"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <!-- Texts -->
+                <div class="texts grid gap-3">
+                  <h4
+                    class="capitalize text-[1.4rem] sm:text-2xl font-spartan font-medium"
+                  >
+                    Most effective way
+                  </h4>
+                  <p class="text-md">
+                    Reverse Osmosis, the most effective way of eliminating water
+                    contaminants is used.
+                  </p>
+                </div>
+              </div>
+              <!-- Commercial -->
+              <div
+                class="commercial sm:max-w-[30rem] md:max-w-[40.5rem] relative flex items-center gap-8"
+              >
+                <div
+                  class="tick text-xl text-slate-200 sm:text-2xl flex justify-center items-center min-h-[3rem] min-w-[3rem] bg-default-blue rounded-full"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <!-- Texts -->
+                <div class="texts grid gap-3">
+                  <h4
+                    class="capitalize text-[1.4rem] sm:text-2xl font-spartan font-medium"
+                  >
+                    Dissolved Substances Removed
+                  </h4>
+                  <p class="text-md">
+                    Our filtration system is powerful enough that can even
+                    remove dissolved substances from the water.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Water Bottle img -->
+          <div
+            class="bottle_img md:translate-x-36 translate-y-20 lg:translate-y-48 col-span-3 w-full z-0"
+          >
+            <img
+              class="wow fadeInRight animated border-[1rem] border-slate-50 w-full drop-shadow-xl"
+              src="./images/protect/bottle.jpg"
+              alt="bottle_img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- Shop Section ----->
+    <!----------------------------------------->
+    <section class="shop py-16 lg:py-24">
+      <div class="container grid gap-16">
+        <div class="header flex justify-center">
+          <h2 class="text-default-text-col">
+            What Our Client are Saying About Acuasafe
+          </h2>
+        </div>
+        <!-- Items -->
+        <div
+          class="items grid justify-center items-center sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- item 1 -->
+          <div
+            class="item wow fadeInUp animated grid gap-6 justify-center bg-[#fefefe] p-8 max-w-[28.75rem]"
+          >
+            <div class="bottle_img flex justify-center relative">
+              <img
+                class="transform scale-95 transition-all duration-500"
+                src="./images/Bottles/shop-1.jpg"
+                alt="bottle"
+              />
+              <!-- Slide Flow -->
+              <div
+                class="slide bg-shape-7 absolute -bottom-[5px] bg-repeat-x w-full h-[10px]"
+              ></div>
+            </div>
+            <div class="content flex flex-col justify-center gap-4">
+              <span class="text-stone-500">1L 3 Bottles</span>
+              <!-- title -->
+              <div class="title">
+                <a
+                  href="#"
+                  class="hover:text-default-blue transition-all duration-300 text text-2xl font-semibold"
+                >
+                  Mineral Water Bottle
+                </a>
+              </div>
+              <!-- price -->
+              <div class="price">
+                <span class="text-default-blue text-2xl">$05.00</span>
+              </div>
+              <!-- defi -->
+              <span class="text-stone-500"
+                >Mineral water bottle for Residential users, available in
+                different sizes</span
+              >
+              <!-- Btn -->
+              <div class="button flex justify-center my-5">
+                <a
+                  class="btn py-2 sm:px-7 px-8 relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-default-blue before:transform-all before:duration-700 text-xl overflow-hidden hover:text-white rounded-full font-bold capitalize bg-white transition-all duration-500 z-10 text-default-text-col border-2 hover:border-default-blue"
+                  href="#"
+                >
+                  <button class="relative z-20 text-lg font-medium">
+                    Add to cart
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div
+            class="item wow fadeInUp animated grid gap-6 justify-center bg-[#fefefe] p-8 max-w-[28.75rem]"
+          >
+            <div class="bottle_img flex justify-center relative">
+              <img
+                class="transform scale-95 transition-all duration-500"
+                src="./images/Bottles/shop-2.jpg"
+                alt="bottle"
+              />
+              <!-- Slide Flow -->
+              <div
+                class="slide bg-shape-7 absolute -bottom-[5px] bg-repeat-x w-full h-[10px]"
+              ></div>
+            </div>
+            <div class="content flex flex-col justify-center gap-4">
+              <span class="text-stone-500">20L 2 Bottles</span>
+              <!-- title -->
+              <div class="title">
+                <a
+                  href="#"
+                  class="hover:text-default-blue transition-all duration-300 text text-2xl font-semibold"
+                >
+                  Bottled sparkling water
+                </a>
+              </div>
+              <!-- price -->
+              <div class="price">
+                <span class="text-default-blue text-2xl">$10.00</span>
+              </div>
+              <!-- defi -->
+              <span class="text-stone-500"
+                >Bottled water in Large containers ideal for the starter
+                businesses.
+              </span>
+              <!-- Btn -->
+              <div class="button flex justify-center my-5">
+                <a
+                  class="btn py-2 sm:px-7 px-8 relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-default-blue before:transform-all before:duration-700 text-xl overflow-hidden hover:text-white rounded-full font-bold capitalize bg-white transition-all duration-500 z-10 text-default-text-col border-2 hover:border-default-blue"
+                  href="#"
+                >
+                  <button class="relative z-20 text-lg font-medium">
+                    Add to cart
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div
+            class="item wow fadeInUp animated grid gap-6 justify-center bg-[#fefefe] p-8 max-w-[28.75rem]"
+          >
+            <div class="bottle_img flex justify-center relative">
+              <img
+                class="transform scale-95 transition-all duration-500"
+                src="./images/Bottles/shop-3.jpg"
+                alt="bottle"
+              />
+              <!-- Slide Flow -->
+              <div
+                class="slide bg-shape-7 absolute -bottom-[5px] bg-repeat-x w-full h-[10px]"
+              ></div>
+            </div>
+            <div class="content flex flex-col justify-center gap-4">
+              <span class="text-stone-500">20L 5 Bottles</span>
+              <!-- title -->
+              <div class="title">
+                <a
+                  href="#"
+                  class="hover:text-default-blue transition-all duration-300 text text-2xl font-semibold"
+                >
+                  Naturally Mineral Water
+                </a>
+              </div>
+              <!-- price -->
+              <div class="price">
+                <span class="text-default-blue text-2xl">$20.00</span>
+              </div>
+              <!-- defi -->
+              <span class="text-stone-500"
+                >Bottled water with 5 large containers for commercial large
+                places.
+              </span>
+              <!-- Btn -->
+              <div class="button flex justify-center my-5">
+                <a
+                  class="btn py-2 sm:px-7 px-8 relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-default-blue before:transform-all before:duration-700 text-xl overflow-hidden hover:text-white rounded-full font-bold capitalize bg-white transition-all duration-500 z-10 text-default-text-col border-2 hover:border-default-blue"
+                  href="#"
+                >
+                  <button class="relative z-20 text-lg font-medium">
+                    Add to cart
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- Client Section ----->
+    <!----------------------------------------->
+    <section class="py-16 bg-[#f2f9ff] relative">
+      <!-- Background Images -->
+      <div class="bg_img">
+        <div
+          class="hidden md:block bg_top bg-shape-8 absolute left-0 top-0 w-full h-[80px] bg-[length:100%_100%] bg-no-repeat bg-center"
+        ></div>
+
+        <div
+          class="hidden md:block bg_bottom bg-shape-9 absolute left-0 bottom-0 w-full h-[134px] bg-[length:100%_100%] bg-no-repeat bg-center"
+        ></div>
+      </div>
+      <div class="container">
+        <div class="content md:py-32">
+          <div class="header flex justify-center">
+            <h2 class="text-default-text-col">
+              What Our Client are Saying About Acuasafe
+            </h2>
+          </div>
+          <!-- Swiper pagination -->
+          <div class="flex justify-end home_pagination my-10"></div>
+          <div class="swiper home_client_slider text-start">
+            <div class="swiper-wrapper">
+              <!-- Client 1 -->
+              <div
+                class="swiper-slide h-auto grid justify-center items-center px-6 py-10 bg-[#fff] drop-shadow-md"
+              >
+                <div class="client_1 flex flex-col sm:flex-row gap-8">
+                  <img
+                    class="rounded-full max-w-[100px] max-h-[100px]"
+                    src="./images/client/client-1.jpg"
+                    alt="appointment-1"
+                  />
+                  <div class="review grid gap-3">
+                    <div
+                      class="star flex md:justify-start gap-4 text-yellow-500 text-lg text-start"
+                    >
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p class="1.2rem">
+                      Outstanding Work!! Would suggest Acuasafe for both
+                      continuing service and emergency scenarios.
+                    </p>
+
+                    <!-- Author -->
+                    <div class="author">
+                      <div
+                        class="name capitalize text-default-text-col font-semibold text-2xl"
+                      >
+                        <h4>salesman</h4>
+                      </div>
+
+                      <div class="position uppercase text-cyan-400">
+                        <span>shop owner</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Client 2 -->
+              <div
+                class="swiper-slide h-auto grid justify-center items-center px-6 py-10 bg-[#fff] drop-shadow-md"
+              >
+                <div class="client_2 flex flex-col sm:flex-row gap-8">
+                  <img
+                    class="rounded-full max-w-[100px] max-h-[100px]"
+                    src="./images/client/client-2.jpg"
+                    alt="appointment-1"
+                  />
+                  <div class="review grid gap-3">
+                    <div
+                      class="star flex md:justify-start gap-4 text-yellow-500 text-lg text-start"
+                    >
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p class="1.2rem">
+                      All of the Acuasafe technicians are very knowledgeable.
+                      They take their time on site and check over everything
+                    </p>
+
+                    <!-- Author -->
+                    <div class="author">
+                      <div
+                        class="name capitalize text-default-text-col font-semibold text-2xl"
+                      >
+                        <h4>Renne</h4>
+                      </div>
+
+                      <div class="position uppercase text-cyan-400">
+                        <span>shop owner</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Client 3 -->
+              <div
+                class="swiper-slide h-auto grid justify-center items-center px-6 py-10 bg-[#fff] drop-shadow-md"
+              >
+                <div class="client_1 flex flex-col sm:flex-row gap-8">
+                  <img
+                    class="rounded-full max-w-[100px] max-h-[100px]"
+                    src="./images/client/client-3.jpg"
+                    alt="appointment-1"
+                  />
+                  <div class="review grid gap-3">
+                    <div
+                      class="star flex md:justify-start gap-4 text-yellow-500 text-lg text-start"
+                    >
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p class="1.2rem">
+                      After every visit, each technician on the Acuasafe
+                      communicates with us to let us know how things are doing
+                    </p>
+
+                    <!-- Author -->
+                    <div class="author">
+                      <div
+                        class="name capitalize text-default-text-col font-semibold text-2xl"
+                      >
+                        <h4>Samj</h4>
+                      </div>
+
+                      <div class="position uppercase text-cyan-400">
+                        <span>freelancer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Client 4 -->
+              <div
+                class="swiper-slide h-auto grid justify-center items-center px-6 py-10 bg-[#fff] drop-shadow-md"
+              >
+                <div class="client_1 flex flex-col sm:flex-row gap-8">
+                  <img
+                    class="rounded-full max-w-[100px] max-h-[100px]"
+                    src="./images/client/client-4.jpg"
+                    alt="appointment-1"
+                  />
+                  <div class="review grid gap-3">
+                    <div
+                      class="star flex md:justify-start gap-4 text-yellow-500 text-lg text-start"
+                    >
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p class="1.2rem">
+                      Acuasafe not only was able to source the correct carbon
+                      but they were able to deliver it within time
+                    </p>
+
+                    <!-- Author -->
+                    <div class="author">
+                      <div
+                        class="name capitalize text-default-text-col font-semibold text-2xl"
+                      >
+                        <h4>Nicolas Lawson</h4>
+                      </div>
+
+                      <div class="position uppercase text-cyan-400">
+                        <span>designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Client 5 -->
+              <div
+                class="swiper-slide h-auto grid justify-center items-center px-6 py-10 bg-[#fff] drop-shadow-md"
+              >
+                <div class="client_1 flex flex-col sm:flex-row gap-8">
+                  <img
+                    class="rounded-full max-w-[100px] max-h-[100px]"
+                    src="./images/client/client-5.jpg"
+                    alt="appointment-1"
+                  />
+                  <div class="review grid gap-3">
+                    <div
+                      class="star flex md:justify-start gap-4 text-yellow-500 text-lg text-start"
+                    >
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p class="1.2rem">
+                      Their expert Hands of the Technicians ensured our system
+                      is functioning effectively provides us peace of mind
+                    </p>
+
+                    <!-- Author -->
+                    <div class="author">
+                      <div
+                        class="name capitalize text-default-text-col font-semibold text-2xl"
+                      >
+                        <h4>Dina Watson</h4>
+                      </div>
+
+                      <div class="position uppercase text-cyan-400">
+                        <span>designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Client 6 -->
+              <div
+                class="swiper-slide h-auto grid justify-center items-center px-6 py-10 bg-[#fff] drop-shadow-md"
+              >
+                <div class="client_1 flex flex-col sm:flex-row gap-8">
+                  <img
+                    class="rounded-full max-w-[100px] max-h-[100px]"
+                    src="./images/client/client-6.jpg"
+                    alt="appointment-1"
+                  />
+                  <div class="review grid gap-3">
+                    <div
+                      class="star flex md:justify-start gap-4 text-yellow-500 text-lg text-start"
+                    >
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p class="1.2rem">
+                      Excellent Job!! would recommend Acuasafe not only in
+                      emergency situations, but for ongoing service too
+                    </p>
+
+                    <!-- Author -->
+                    <div class="author">
+                      <div
+                        class="name capitalize text-default-text-col font-semibold text-2xl"
+                      >
+                        <h4>Selena</h4>
+                      </div>
+
+                      <div class="position uppercase text-cyan-400">
+                        <span>Marketing Asst.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- Team Section ----->
+    <!----------------------------------------->
+    <section class="py-16">
+      <div class="container text-start">
+        <div class="content grid gap-12 items-center">
+          <div class="header justify-self-center text-center">
+            <h2 class="text-default-text-col">
+              Our Dedicated Team Members value Your Needs
+            </h2>
+          </div>
+          <!-- Team members -->
+          <div
+            class="members wow fadeInUp animated w-full grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-12 items-center px-6 sm:px-10"
+          >
+            <!-- Member 1 -->
+            <div class="member wow animated fadeInUp grid gap-6 justify-center">
+              <div class="img_wrapper relative">
+                <!-- hover img bg -->
+                <div
+                  class="hover_img absolute -inset-0 transition-all duration-300"
+                ></div>
+                <img src="./images/members/member-1.jpg" alt="" />
+
+                <div
+                  class="icons absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500"
+                >
+                  <ul class="flex gap-3">
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-white transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-white transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-white transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Member Info -->
+              <div class="info flex flex-col">
+                <a
+                  href="#"
+                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-2xl font-semibold"
+                >
+                  Md Sweem
+                </a>
+                <div
+                  class="position text-default-light-stone max-w-[17rem] text-[0.95rem] font-semibold"
+                >
+                  <span class="uppercase">WATER TESTER</span>
+                </div>
+              </div>
+            </div>
+            <!-- Member 2 -->
+            <div class="member wow animated fadeInUp grid gap-6 justify-center">
+              <div class="img_wrapper relative">
+                <!-- hover img bg -->
+                <div
+                  class="hover_img absolute -inset-0 transition-all duration-300"
+                ></div>
+                <img src="./images/members/member-2.jpg" alt="" />
+
+                <div
+                  class="icons absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500"
+                >
+                  <ul class="flex gap-3">
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-white transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-white transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-white transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Member Info -->
+              <div class="info flex flex-col">
+                <a
+                  href="#"
+                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-2xl font-semibold"
+                >
+                  Christian Bale
+                </a>
+                <div
+                  class="position text-default-light-stone max-w-[17rem] text-[0.95rem] font-semibold"
+                >
+                  <span class="uppercase">WATER DELIVERY MAN</span>
+                </div>
+              </div>
+            </div>
+            <!-- Member 3 -->
+            <div class="member wow animated fadeInUp grid gap-6 justify-center">
+              <div class="img_wrapper relative">
+                <!-- hover img bg -->
+                <div
+                  class="hover_img absolute -inset-0 transition-all duration-300"
+                ></div>
+                <img src="./images/members/member-3.jpg" alt="" />
+
+                <div
+                  class="icons absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-500"
+                >
+                  <ul class="flex gap-3">
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-white transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-white transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a
+                        href="#"
+                        class="hover:bg-default-blue flex justify-center items-center w-12 h-12 bg-stone-100 rounded-full text-xl hover:text-white transition-all duration-300"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Member Info -->
+              <div class="info flex flex-col">
+                <a
+                  href="#"
+                  class="capitalize hover:text-default-blue transition-all duration-300 text-default-text-col text-2xl font-semibold"
+                >
+                  Hard Branots
+                </a>
+                <div
+                  class="position text-default-light-stone max-w-[17rem] text-[0.95rem] font-semibold"
+                >
+                  <span class="uppercase">EXPRESS DELIVERY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- Service Section ----->
+    <!----------------------------------------->
+    <section
+      class="py-16 bg-default-dark-blue text-white mt-10 lg:mt-20 text-start sm:text-center relative"
+    >
+      <!-- Top bg -->
+      <div class="top_bg absolute top-0 left-0 right-0">
+        <img src="./images/service/service-top-bg.png" alt="" />
+      </div>
+      <!-- Top left shadow bg -->
+      <div
+        class="left_bg bg-shape-10 absolute left-0 top-0 w-[896px] h-[414px] bg-no-repeat"
+      ></div>
+      <!-- Main -->
+      <div class="container py-10">
+        <div
+          class="content z-20 grid md:grid-cols-2 gap-10 justify-center items-center"
+        >
+          <div class="bike_rider md:-ml-10">
+            <img
+              class="wow slideInLeft animated"
+              src="./images/service/bike-rider.png"
+              alt="bike-rider"
+            />
+          </div>
+          <!-- Texts -->
+          <div
+            class="texts flex flex-col justify-center items-start sm:items-center gap-6"
+          >
+            <!-- title -->
+            <h2>Ready To Get Our Premium Water Delivery Service.</h2>
+            <p>
+              We give our services to more than 10 countries. We give our
+              delivery service using more than 50 couriers within 2hr in
+              anywhere in the city.
+            </p>
+            <!-- list -->
+            <ul
+              class="list grid w-full gap-4 text-lg font-medium sm:text-xl sm:font-semibold font-spartan"
+            >
+              <li class="relative">
+                <i
+                  class="fa-solid fa-check absolute top-0 text-slate-200 text-sm flex justify-center items-center h-6 w-6 bg-slate-400/40 rounded-full left-0"
+                ></i>
+                <span class="ml-12 sm:ml-0">Free Delivery</span>
+              </li>
+              <li class="relative">
+                <i
+                  class="fa-solid fa-check absolute top-0 text-slate-200 text-sm flex justify-center items-center h-6 w-6 bg-slate-400/40 rounded-full left-0"
+                ></i>
+                <span class="ml-12 sm:ml-0">7 Days In A Week Service</span>
+              </li>
+            </ul>
+
+            <a
+              class="mt-6 btn relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-white sm:py-3 sm:px-7 before:transform-all before:duration-700 text-lg sm:text-xl overflow-hidden text-white hover:text-default-blue rounded-full py-3 px-5 md:py-4 md:px-8 font-bold capitalize bg-default-blue transition-all duration-500 z-10"
+              href="#"
+            >
+              <button class="relative z-20 capitalize">our services</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- shadow bg -->
+      <!-- Footer Bottom bg -->
+      <div
+        class="absolute bg-shape-13 left-0 bottom-0 w-full h-[384px] bg-no-repeat bg-[top_center] bg-cover"
+      ></div>
+      <!-- bottom bg -->
+      <div class="bottom absolute bottom-0 left-0 right-0">
+        <img src="./images/service/service-bottom.png" alt="" />
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- News Section ----->
+    <!----------------------------------------->
+    <section class="news pt-24 py-16 md:py-32">
+      <div class="container">
+        <div class="content grid gap-20">
+          <div class="header flex justify-center">
+            <h2>Stay Update with Acuasafe</h2>
+          </div>
+          <div
+            class="items grid gap-8 md:gap-0 md:flex md:flex-wrap lg:flex-nowrap md:shrink-0 justify-center md:justify-start"
+          >
+            <!-- item 1 -->
+            <div
+              class="news_item wow fadeInUp animated lg:w-1/3 md:w-[50%] md:px-2 text-start max-w-[30rem]"
+            >
+              <div class="img relative overflow-hidden">
+                <a href="#" class="w-full h-full">
+                  <img
+                    class="w-full h-full relative transition-all duration-500 scale-105"
+                    src="./images/news/news-1.jpg"
+                    alt="news-1"
+                  />
+
+                  <!-- hover img bg -->
+                  <div
+                    class="hover_img absolute -inset-0 transition-all duration-300"
+                  ></div>
+                </a>
+              </div>
+              <div
+                class="texts px-4 pt-8 pb-12 flex flex-col gap-4 justify-center items-start custom_shadow"
+              >
+                <a
+                  href="#"
+                  class="uppercase text-default-blue border-b-[1px] border-transparent hover:border-default-blue font-semibold"
+                  >FILTERATION</a
+                >
+                <!-- Title -->
+                <div class="title">
+                  <a
+                    href="#"
+                    class="text-[1.4rem] font-spartan font-semibold hover:text-default-blue transition-all duration-300"
+                  >
+                    Carbonated (Sparkling) Water: Good or Bad?
+                  </a>
+                </div>
+                <!-- date -->
+                <div class="date w-full">
+                  <ul
+                    class="post-info flex uppercase gap-4 text-slate-900 font-semibold"
+                  >
+                    <li>
+                      <a href="#">admin</a>
+                    </li>
+                    <li>March 1, 2022</li>
+                  </ul>
+                </div>
+                <!-- info -->
+                <p class="text-stone-500 text-md">
+                  Carbonated water is a revitalising drink and a healthy
+                  substitute for sweet soft beverages. Some individuals worry
+                  ...
+                </p>
+                <!-- Btn -->
+                <div class="button flex">
+                  <a
+                    class="mt-6 btn py-2 px-7 relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-default-blue before:transform-all before:duration-700 text-xl overflow-hidden hover:text-white rounded-full font-bold capitalize bg-white transition-all duration-500 z-10 text-default-text-col border-2 hover:border-default-blue"
+                    href="#"
+                  >
+                    <button
+                      class="relative z-20 text-[1.2rem] font-medium capitalize"
+                    >
+                      read more
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div
+              class="news_item wow fadeInUp animated lg:w-1/3 md:w-[50%] md:px-2 text-start max-w-[30rem]"
+            >
+              <div class="img relative overflow-hidden">
+                <a href="#" class="w-full h-full">
+                  <img
+                    class="w-full h-full relative transition-all duration-500 scale-105"
+                    src="./images/news/news-2.jpg"
+                    alt="news-2"
+                  />
+
+                  <!-- hover img bg -->
+                  <div
+                    class="hover_img absolute -inset-0 transition-all duration-300"
+                  ></div>
+                </a>
+              </div>
+              <div
+                class="texts px-4 pt-8 pb-12 flex flex-col gap-4 justify-center items-start custom_shadow"
+              >
+                <a
+                  href="#"
+                  class="uppercase text-default-blue border-b-[1px] border-transparent hover:border-default-blue font-semibold"
+                  >FILTERATION</a
+                >
+                <!-- Title -->
+                <div class="title">
+                  <a
+                    href="#"
+                    class="text-[1.4rem] font-spartan font-semibold hover:text-default-blue transition-all duration-300"
+                  >
+                    How Drinking More Water Can Help
+                  </a>
+                </div>
+                <!-- date -->
+                <div class="date w-full">
+                  <ul
+                    class="post-info flex uppercase gap-4 text-slate-900 font-semibold"
+                  >
+                    <li>
+                      <a href="#">admin</a>
+                    </li>
+                    <li>february 23, 2022</li>
+                  </ul>
+                </div>
+                <!-- info -->
+                <p class="text-stone-500 text-md">
+                  If you lose even 2% of the water in your body, dehydration
+                  will become apparent. Between about 55%...
+                </p>
+                <!-- Btn -->
+                <div class="button flex">
+                  <a
+                    class="mt-6 btn py-2 px-7 relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-default-blue before:transform-all before:duration-700 text-xl overflow-hidden hover:text-white rounded-full font-bold capitalize bg-white transition-all duration-500 z-10 text-default-text-col border-2 hover:border-default-blue"
+                    href="#"
+                  >
+                    <button
+                      class="relative z-20 text-[1.2rem] font-medium capitalize"
+                    >
+                      read more
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div
+              class="news_item sm:mt-4 lg:mt-0 wow fadeInUp animated lg:w-1/3 md:w-[50%] md:px-2 text-start max-w-[30rem]"
+            >
+              <div class="img relative overflow-hidden">
+                <a href="#" class="w-full h-full">
+                  <img
+                    class="w-full h-full relative transition-all duration-500 scale-105"
+                    src="./images/news/news-3.jpg"
+                    alt="news-3"
+                  />
+
+                  <!-- hover img bg -->
+                  <div
+                    class="hover_img absolute -inset-0 transition-all duration-300"
+                  ></div>
+                </a>
+              </div>
+              <div
+                class="texts px-4 pt-8 pb-12 flex flex-col gap-4 justify-center items-start custom_shadow"
+              >
+                <a
+                  href="#"
+                  class="uppercase text-default-blue border-b-[1px] border-transparent hover:border-default-blue font-semibold"
+                  >FILTERATION</a
+                >
+                <!-- Title -->
+                <div class="title">
+                  <a
+                    href="#"
+                    class="text-[1.4rem] font-spartan font-semibold hover:text-default-blue transition-all duration-300"
+                  >
+                    Why does the ice floats in water?
+                  </a>
+                </div>
+                <!-- date -->
+                <div class="date w-full">
+                  <ul
+                    class="post-info flex uppercase gap-4 text-slate-900 font-semibold"
+                  >
+                    <li>
+                      <a href="#">admin</a>
+                    </li>
+                    <li>july 29, 2021</li>
+                  </ul>
+                </div>
+                <!-- info -->
+                <p class="text-stone-500 text-md">
+                  Water consumption is crucial for numerous body functions. They
+                  carry nutrition to cells, control body temperature, and ...
+                </p>
+                <!-- Btn -->
+                <div class="button flex">
+                  <a
+                    class="mt-6 btn py-2 px-7 relative before:absolute before:w-[200%] before:h-[200%] before:top-[110%] before:left-1/2 before:transform before:-translate-x-1/2 before:rounded-[50%] before:bg-default-blue before:transform-all before:duration-700 text-xl overflow-hidden hover:text-white rounded-full font-bold capitalize bg-white transition-all duration-500 z-10 text-default-text-col border-2 hover:border-default-blue"
+                    href="#"
+                  >
+                    <button
+                      class="relative z-20 text-[1.2rem] font-medium capitalize"
+                    >
+                      read more
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------->
+    <!----- Footer Section ----->
+    <!----------------------------------------->
+    <footer class="overflow-hidden bg-default-footer-bg mt-20 text-white">
+      <div class="footer_curbe_bg">
+        <img class="" src="./images/footer/footer.png" alt="" />
+      </div>
+      <!-- Footer Top -->
+      <div class="container footer_top">
+        <!-- Contact -->
+        <div
+          class="contact mt-20 sm:mt-28 md:mt-40 flex justify-center md:justify-between items-center flex-wrap gap-6"
+        >
+          <h1 class="text-2xl sm:text-3xl text-semibold">
+            Please <span class="text-default-blue">Call Us</span> to Take an
+            Extraordinary Service
+          </h1>
+          <button class="">
+            <a
+              href="tel:http://(773)%20225-3523"
+              class="text-white bg-cyan-400 rounded-full py-3 px-8 sm:py-5 sm:px-10 text-lg sm:text-xl flex justify-center items-center gap-4"
+              ><i class="fas fa-phone"></i>(773) 225-3523</a
+            >
+          </button>
+        </div>
+        <!-- footer line -->
+        <div class="footer_line justify-center my-20">
+          <img src="./images/footer/footer-line.png" alt="" />
+        </div>
+      </div>
+      <!-- Footer Main -->
+      <div class="footer_main relative pb-20">
+        <div
+          class="content container grid sm:grid-cols-2 lg:grid-cols-4 gap-8 z-20 relative"
+        >
+          <!-- item 1 -->
+          <div class="item_1 flex flex-col gap-8 text-start">
+            <a href="#" class="footer_logo">
+              <img
+                class="max-w-[12rem]"
+                src="./images/footer/footer-logo.png"
+                alt="footer-logo"
+              />
+            </a>
+            <!-- text container -->
+            <div class="text grid gap-4">
+              <span class="text-lg"
+                >Delivering the Purest Water for a Healthy life</span
+              >
+              <!-- Open hour -->
+              <h3 class="text-lg font-semibold capit">Open Hours:</h3>
+              <!-- Time -->
+              <span class="time">Mon - Sat: 9AM - 6PM.</span>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="item_2 flex flex-col gap-8 text-start lg:ml-8">
+            <div class="header pt-2">
+              <h3 class="text-2xl font-semibold capitalize">Address</h3>
+            </div>
+            <!-- Info list -->
+            <ul class="info-list grid gap-6">
+              <li class="flex gap-6 text-lg items-center">
+                <i class="text-default-blue fal fa fa-map-marker-alt"></i>
+                <span>Flat 20, Reynolds Neck, FV77 8WS</span>
+              </li>
+              <li class="flex gap-6 text-lg items-center">
+                <i class="text-default-blue fal fa fa-phone"></i>
+                <span
+                  >Call Us:
+                  <a
+                    href="tel:333-666-0001"
+                    class="transition-all duration-500 hover:text-default-blue"
+                  >
+                    333-666-0001
+                  </a></span
+                >
+              </li>
+              <li class="flex gap-6 text-lg items-center">
+                <i class="text-default-blue fal fa fa-envelope-open-text"></i>
+                <a
+                  href="mailto:info@example.com"
+                  class="transition-all duration-500 hover:text-default-blue"
+                  >info@example.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- item 3 -->
+          <div class="item_3 flex flex-col gap-8 text-start lg:ml-14">
+            <div class="header pt-2">
+              <h3 class="text-2xl font-semibold capitalize">Usefull Link</h3>
+            </div>
+            <!-- Links list -->
+            <ul class="links_list grid gap-4">
+              <li class="relative">
+                <a
+                  class="relative after:absolute after:h-[1px] after:w-[0] after:bg-default-blue after:left-0 after:bottom-0 after:transition-all after:duration-500 hover:after:w-full hover:text-default-blue transition-all duration-500"
+                  href="./about.html"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative after:absolute after:h-[1px] after:w-[0] after:bg-default-blue after:left-0 after:bottom-0 after:transition-all after:duration-500 hover:after:w-full hover:text-default-blue transition-all duration-500"
+                  href="#"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative after:absolute after:h-[1px] after:w-[0] after:bg-default-blue after:left-0 after:bottom-0 after:transition-all after:duration-500 hover:after:w-full hover:text-default-blue transition-all duration-500"
+                  href="#"
+                  >Market Research</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative after:absolute after:h-[1px] after:w-[0] after:bg-default-blue after:left-0 after:bottom-0 after:transition-all after:duration-500 hover:after:w-full hover:text-default-blue transition-all duration-500"
+                  href="#"
+                  >Our Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative after:absolute after:h-[1px] after:w-[0] after:bg-default-blue after:left-0 after:bottom-0 after:transition-all after:duration-500 hover:after:w-full hover:text-default-blue transition-all duration-500"
+                  href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Item-4 -->
+          <div class="item_4 flex flex-col gap-8 text-start">
+            <div class="header pt-2">
+              <h3 class="text-2xl font-semibold capitalize">Subscribe</h3>
+            </div>
+            <!-- Lorem -->
+            <div class="content grid gap-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <!-- Email Input -->
+            <div
+              class="flex email_container border border-transparent bg-slate-100 text-slate-900 rounded-full overflow-hidden max-w-[18rem]"
+            >
+              <span
+                ><input
+                  type="email"
+                  value=""
+                  size="40"
+                  class="input w-full h-full border-none focus: bg-transparent placeholder:select-none placeholder:text-slate-400 py-4 pl-5 focus:outline-none focus:ring-8 focus:ring-sky-500 disabled:bg-white disabled:text-white0 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 rounded-bl-full rounded-tl-full email_input"
+                  aria-required="true"
+                  aria-invalid="false"
+                  placeholder="Your Email"
+              /></span>
+              <button
+                class="px-4 bg-default-blue text-white border-l rounded-tr-md border-tr"
+                type="submit"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Bottom bg -->
+        <div
+          class="footer_bottom_bg absolute bg-shape-13 left-0 bottom-0 w-full h-[384px] bg-no-repeat bg-[top_center] bg-cover"
+        ></div>
+      </div>
+      <!-- Footer bottom -->
+      <div class="footer_bottom bg-default-footer-bottom z-10">
+        <div class="container">
+          <div
+            class="content py-10 flex flex-col md:flex-row gap-4 justify-between items-center"
+          >
+            <!-- Copyright -->
+            <div class="copyright">
+              <p>
+                <a
+                  href="#"
+                  class="text-default-blue border-b-2 border-transparent hover:border-default-blue"
+                  >Acuasafe</a
+                >
+                © 2022 All Right Reserved
+              </p>
+            </div>
+            <!-- Link Icons -->
+            <div class="link_icons">
+              <ul class="flex gap-4 text-md">
+                <li>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex justify-center items-center rounded-full bg-white/30 hover:bg-default-blue transition-all duration-300 hover:text-white"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex justify-center items-center rounded-full bg-white/30 hover:bg-default-blue transition-all duration-300 hover:text-white"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex justify-center items-center rounded-full bg-white/30 hover:bg-default-blue transition-all duration-300 hover:text-white"
+                    ><i class="fa-brands fa-google-plus-g"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex justify-center items-center rounded-full bg-white/30 hover:bg-default-blue transition-all duration-300 hover:text-white"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- Terms & Policy -->
+            <div class="wrapper flex gap-4">
+              <a
+                href="#"
+                class="hover:text-default-blue transition-all duration-200"
+                >Terms of Service</a
+              >
+              <span>|</span>
+              <a
+                href="#"
+                class="hover:text-default-blue transition-all duration-200"
+                >Privacy Policy
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll Top Button -->
+    <div
+      class="scroll_top z-40 fixed transition-all duration-700 cursor-pointer right-5 sm:right-10 bg-default-blue sm:py-3 sm:px-5 tex py-2 px-4 rounded-sm text-white text-lg sm:text-xl"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- overlay -->
+    <div
+      @click="nav = false"
+      x-cloak
+      x-bind:class="nav ? 'visible opacity-100' : 'invisible opacity-0'"
+      class="overlay absolute bg-slate-900/70 z-40 inset-0 transition-all duration-500"
+    ></div>
+    <!-- Import Class -->
+    <div class="hidden py-20 h-16"></div>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Wow js -->
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Owl carousel -->
+    <script src="./js/owl.js"></script>
+    <!-- main js -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<!----------------------------------------->
+<!----- Nav Section ----->
+<!----------------------------------------->

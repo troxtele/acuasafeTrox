@@ -1,0 +1,280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h_16 {
+  @apply h-16;
+}
+
+.container {
+  @apply max-w-[82rem] m-auto px-6 sm:px-10;
+}
+
+section {
+  @apply overflow-hidden;
+}
+
+/* Overflow section */
+.feature_section {
+  @apply overflow-visible;
+}
+
+.feature_section .items .item:hover img {
+  @apply scale-100
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-bold font-spartan;
+}
+
+h2 {
+  @apply text-2xl xs:text-3xl md:text-4xl md:leading-snug  max-w-[40rem] sm:px-6;
+}
+
+p {
+  @apply leading-7;
+}
+
+/* All btns */
+.btn:hover:before {
+  @apply -top-[10%] z-10;
+}
+
+[x-cloak] {
+  @apply hidden !important;
+}
+/* Swiper Slider */
+.swiper-pagination-bullet {
+  @apply h-4 w-4 rounded-full bg-slate-500;
+}
+.swiper-pagination-bullet-active {
+  @apply bg-default-blue;
+}
+
+/* owl carousel */
+.owl-stage-outer,
+.owl-stage,
+.owl-item {
+  @apply h-full w-full overflow-hidden;
+}
+
+/*=== Main page ===*/
+/*  Nav Bar  */
+.sub_menu {
+  @apply opacity-0 invisible top-[110%];
+}
+
+.nav_large ul .parent_li:hover > .sub_menu {
+  @apply opacity-100 visible top-full;
+}
+
+/*=== Water Section ===*/
+
+/* Bottle man */
+.water .bg-shap {
+  box-shadow: 0px 0px 50px 0px #0000000d;
+}
+.water .item {
+  transition: all 0.5s ease;
+  box-shadow: 0px 10px 40px 0px #00000014;
+}
+.water .item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 40px 0px #0000001f;
+}
+
+/* box shadow */
+.custom_shadow {
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*=== Team Section ===*/
+.member:hover .hover_img {
+  @apply bg-slate-900/50;
+}
+.member:hover .icons {
+  @apply scale-100;
+}
+
+/*=== Shop Section ===*/
+.shop .items .item {
+  box-shadow: 0px 10px 50px 0px #0000001c;
+}
+.shop .items .item:hover img {
+  @apply scale-100;
+}
+
+/*=== News Section ===*/
+.news .items .news_item:hover .hover_img {
+  @apply bg-slate-900/50;
+}
+.news .items .news_item:hover img {
+  @apply scale-110;
+}
+
+/*===  footer Section ===*/
+.email_container:focus-within {
+  @apply border-default-blue;
+}
+/*  Animations ***************************************************/
+/* Animated Blob */
+.animated_blob {
+  animation-name: blob;
+  animation-duration: 10000ms;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blob {
+  0% {
+    transform: scale(0.9);
+    visibility: visible;
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+/* Shop Slide */
+.shop .items .slide {
+  animation: slide 60s linear infinite;
+  -webkit-animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1920px 0;
+  }
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1920px 0;
+  }
+}
+
+/* Hero Slider Animation */
+.hero_slider .left_content h1 {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+
+.hero_slider .active .left_content h1 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 1000ms;
+  -moz-transition-delay: 1000ms;
+  -ms-transition-delay: 1000ms;
+  -o-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+}
+
+.hero_slider .left_content p {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+
+.hero_slider .active .left_content p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 1200ms;
+  -moz-transition-delay: 1200ms;
+  -ms-transition-delay: 1200ms;
+  -o-transition-delay: 1200ms;
+  transition-delay: 1200ms;
+}
+
+.hero_slider .left_content .buttons {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+
+.hero_slider .active .left_content .buttons {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 1400ms;
+  -moz-transition-delay: 1400ms;
+  -ms-transition-delay: 1400ms;
+  -o-transition-delay: 1400ms;
+  transition-delay: 1400ms;
+}
+
+.hero_slider .large_bottle {
+  opacity: 0;
+  z-index: -1;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+
+.hero_slider .active .large_bottle {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 1000ms;
+  -moz-transition-delay: 1000ms;
+  -ms-transition-delay: 1000ms;
+  -o-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+}
