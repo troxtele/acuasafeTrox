@@ -707,8 +707,8 @@ video {
   right: 0.5rem;
 }
 
-.bottom-\[48px\] {
-  bottom: 48px;
+.bottom-\[60px\] {
+  bottom: 60px;
 }
 
 .bottom-\[-152px\] {
@@ -751,30 +751,6 @@ video {
   bottom: -100px;
 }
 
-.bottom-\[5px\] {
-  bottom: 5px;
-}
-
-.bottom-\[50px\] {
-  bottom: 50px;
-}
-
-.bottom-\[53px\] {
-  bottom: 53px;
-}
-
-.bottom-\[55px\] {
-  bottom: 55px;
-}
-
-.bottom-\[58px\] {
-  bottom: 58px;
-}
-
-.bottom-\[60px\] {
-  bottom: 60px;
-}
-
 .z-30 {
   z-index: 30;
 }
@@ -811,9 +787,9 @@ video {
   grid-column: span 3 / span 3;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .my-20 {
@@ -824,11 +800,6 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .mt-10 {
@@ -971,8 +942,8 @@ video {
   height: 16rem;
 }
 
-.h-\[446px\] {
-  height: 446px;
+.h-\[450px\] {
+  height: 450px;
 }
 
 .h-\[528px\] {
@@ -1011,10 +982,6 @@ video {
   height: 1.5rem;
 }
 
-.h-\[450px\] {
-  height: 450px;
-}
-
 .max-h-\[500px\] {
   max-height: 500px;
 }
@@ -1029,14 +996,6 @@ video {
 
 .min-h-\[3rem\] {
   min-height: 3rem;
-}
-
-.min-h-\[\] {
-  min-height: ;
-}
-
-.min-h-\[513px\] {
-  min-height: 513px;
 }
 
 .w-full {
@@ -1091,8 +1050,8 @@ video {
   width: 2.5rem;
 }
 
-.w-\[987px\] {
-  width: 987px;
+.w-\[990px\] {
+  width: 990px;
 }
 
 .w-\[280px\] {
@@ -1117,14 +1076,6 @@ video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-\[98px\] {
-  width: 98px;
-}
-
-.w-\[990px\] {
-  width: 990px;
 }
 
 .min-w-\[3rem\] {
@@ -1291,10 +1242,6 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1373,10 +1320,6 @@ video {
 
 .gap-20 {
   gap: 5rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .justify-self-center {
@@ -1746,9 +1689,9 @@ video {
   padding-right: 2.5rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .px-2 {
@@ -1769,6 +1712,11 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .px-7 {
@@ -2628,12 +2576,12 @@ p {
     margin-top: 7rem;
   }
 
-  .sm\:ml-0 {
-    margin-left: 0px;
-  }
-
   .sm\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px;
   }
 
   .sm\:block {
@@ -2879,11 +2827,6 @@ p {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:text-6xl {
